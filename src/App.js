@@ -23,12 +23,5 @@ function App() {
   );
 }
 
-function emptyTryCatch() {
-  try {
-    
-  } catch (error) {
-    
-  }
-}
 
 export default App;

@@ -9,6 +9,6 @@ test('renders learn react link', () => {
 
 test('renders workshop title header', () => {
   render(<App />);
-  const headerElement = screen.getByText('Intentional Wrong Title');
+  const headerElement = screen.getByText('CI/CD Workshop');
   expect(headerElement).toBeInTheDocument();
 });
