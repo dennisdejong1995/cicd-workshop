@@ -24,6 +24,7 @@ jobs:
       - run: npm install
       - run: npm run build
   Test:
+    needs: Build
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
