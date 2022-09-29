@@ -4,8 +4,6 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-    env:
-      ENV_VARIABLE: dev
     steps:
       - run: echo ${{secrets.SONAR_TOKEN}}
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
