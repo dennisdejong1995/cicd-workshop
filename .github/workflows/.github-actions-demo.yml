@@ -36,6 +36,6 @@ jobs:
       - run: npm run test-with-coverage
       - name: Push SonarQube
         env:
-          sonar_url: ${{secrets.SONAR_URL}}
-          sonar_token: ${{secrets.SONAR_TOKEN}}
+          SONAR_URL: ${{secrets.SONAR_URL}}
+          SONAR_TOKEN: ${{secrets.SONAR_TOKEN}}
         run: npm run push-sonar
