@@ -34,4 +34,8 @@ jobs:
         uses: actions/checkout@v3
       - run: npm install
       - run: npm run test-with-coverage
-      - run: npm run push-sonar
+      - name: Push SonarQube
+        env:
+          sonar_url: ${{secrets.SONAR_URL}}
+          sonar_token: ${{secrets.SONAR_TOKEN}}
+        run: npm run push-sonar
