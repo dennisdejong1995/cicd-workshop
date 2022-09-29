@@ -7,7 +7,6 @@ jobs:
     env:
       ENV_VARIABLE: dev
     steps:
-      - run: echo ${{dev.SONAR_TOKEN}}
       - run: echo ${{secrets.SONAR_TOKEN}}
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
