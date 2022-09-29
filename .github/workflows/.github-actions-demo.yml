@@ -19,4 +19,4 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - npm build:
+      - run: npm build
